@@ -6,13 +6,11 @@ import { Button, Image, Item } from "semantic-ui-react";
 
 class Chatcontainer extends Component {
   renderClass = entry => {
-    console.log("this.props ");
-    console.log(entry);
     if (typeof entry != "undefined") {
       if (entry.sender === "user") {
-        return "left floated right aligned six wide column";
+        return "left floated right aligned eight wide column";
       } else {
-        return "right floated left aligned six wide column";
+        return "right floated left aligned eight wide column";
       }
     }
   };
