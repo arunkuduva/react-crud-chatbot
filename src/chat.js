@@ -31,7 +31,7 @@ const messageMiddleware = () => next => action => {
   }
 };
 
-const initState = [{ text: "Hi there !" }];
+const initState = [{ text: "Hello there ", sender: "bot" }];
 
 const messageReducer = (state = initState, action) => {
   switch (action.type) {
